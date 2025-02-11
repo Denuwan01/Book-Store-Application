@@ -24,4 +24,4 @@ A modern and responsive book store web application built with **React.js** and *
 
 1. **Clone the repository:**  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Denuwan01/Book-Store-Application.git
