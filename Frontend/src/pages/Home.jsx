@@ -1,41 +1,44 @@
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
+import book1 from '../assets/Book1.jpg';
+import book2 from '../assets/Book2.jpeg';
+import book3 from '../assets/Book3.jpg';
 
 function Home() {
   const featuredBooks = [
     {
       id: 1,
-      title: "The Great Gatsby",
-      author: "F. Scott Fitzgerald",
+      title: "Modol Duwa",
+      author: "Mrs. Martin Wickramasinghe",
       price: 1500.00,
-      image: "https://picsum.photos/200/300"
+      image: book1
     },
     {
       id: 2,
-      title: "To Kill a Mockingbird",
-      author: "Harper Lee",
+      title: "Hath Pana",
+      author: "Mrs. Kumaratunga Munidasa",
       price: 2150.00,
-      image: "https://picsum.photos/200/300"
+      image: book2
     },
     {
       id: 3,
-      title: "1984",
-      author: "George Orwell",
+      title: "Heensaraya",
+      author: "Mrs. Kumaratunga Munidasa",
       price: 1800.00,
-      image: "https://picsum.photos/200/300"
+      image: book3
     }
   ];
 
   return (
     <div className="home">
       <section className="hero">
-        <h1>Welcome to BookStore</h1>
+        <h1>Welcome to පොත් මැදුර</h1>
         <p>Discover your next favorite book</p>
         <Link to="/shop" className="cta-button">Shop Now</Link>
       </section>
 
       <section className="featured">
-        <h2>Featured Books</h2>
+        <h2>Our Collection</h2>
         <div className="featured-books">
           {featuredBooks.map(book => (
             <div key={book.id} className="book-card">

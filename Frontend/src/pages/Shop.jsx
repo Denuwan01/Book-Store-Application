@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import '../styles/Shop.css';
+import book4 from '../assets/Book4.jpg';
 
 function Shop() {
   const { addToCart } = useCart();
@@ -9,10 +10,10 @@ function Shop() {
   const books = [
     {
       id: 1,
-      title: "The Great Gatsby",
-      author: "F. Scott Fitzgerald",
-      price: 19.99,
-      image: "https://picsum.photos/200/300"
+      title: "Kirihami",
+      author: "Mrs. Sibil Weththasinghe",
+      price: 1200.00,
+      image: book4
     },
     // Add more books here
   ];
@@ -39,7 +40,7 @@ function Shop() {
             <img src={book.image} alt={book.title} />
             <h3>{book.title}</h3>
             <p>{book.author}</p>
-            <p className="price">${book.price}</p>
+            <p className="price">LKR {book.price}</p>
             <button onClick={() => addToCart(book)}>Add to Cart</button>
           </div>
         ))}

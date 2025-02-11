@@ -15,7 +15,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <NavLink to="/">BookStore</NavLink>
+        <NavLink to="/">පොත් මැදුර
+        </NavLink>
       </div>
       
       <button className="hamburger" onClick={toggleMenu}>

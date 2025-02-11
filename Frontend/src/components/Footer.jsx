@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>BookStore</h3>
+          <h3>පොත් මැදුර</h3>
           <p>Your one-stop destination for all your reading needs.</p>
         </div>
         
@@ -31,7 +31,7 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; 2024 BookStore. All rights reserved.</p>
+        <p>&copy; 2024 පොත් මැදුර. All rights reserved.</p>
       </div>
     </footer>
   );
