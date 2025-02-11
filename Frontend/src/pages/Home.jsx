@@ -7,21 +7,21 @@ function Home() {
       id: 1,
       title: "The Great Gatsby",
       author: "F. Scott Fitzgerald",
-      price: 19.99,
+      price: 1500.00,
       image: "https://picsum.photos/200/300"
     },
     {
       id: 2,
       title: "To Kill a Mockingbird",
       author: "Harper Lee",
-      price: 21.99,
+      price: 2150.00,
       image: "https://picsum.photos/200/300"
     },
     {
       id: 3,
       title: "1984",
       author: "George Orwell",
-      price: 18.99,
+      price: 1800.00,
       image: "https://picsum.photos/200/300"
     }
   ];
@@ -42,7 +42,7 @@ function Home() {
               <img src={book.image} alt={book.title} />
               <h3>{book.title}</h3>
               <p>{book.author}</p>
-              <p className="price">${book.price}</p>
+              <p className="price">LKR{book.price}</p>
             </div>
           ))}
         </div>
