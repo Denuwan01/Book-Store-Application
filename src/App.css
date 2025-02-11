@@ -1,0 +1,74 @@
+:root {
+  /* Light theme */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #2c3e50;
+  --text-secondary: #6c757d;
+  --accent: #3498db;
+  --accent-hover: #2980b9;
+  --bg-primary-transparent: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1f2c;
+  --bg-secondary: #242936;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent: #4299e1;
+  --accent-hover: #3182ce;
+  --bg-primary-transparent: rgba(26, 31, 44, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1rem;
+  }
+}
